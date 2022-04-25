@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header class="top">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial.</p>
+      <span>No credit card required.</span>
+      <img src="./images/pattern-circles.svg" alt="" />
+    </header>
+    <section class="main">
+      <div class="pattern-bg" aria-hidden="true"></div>
+      <div class="main-header">
+        <span class="page-views">100k Pageviews</span>
+        <h3 class="price">
+          <span id="price">$16.00</span><small>/month </small>
+        </h3>
+        <div class="range-input">
+          <label for="range-input"></label>
+          <input
+            type="range"
+            min="1"
+            max="32"
+            value="16"
+            class="slider"
+            id="range-input"
+          />
+        </div>
+      </div>
+      <div class="main-body">
+        <span class="monthly">Monthly Billing</span>
+        <div class="toggle-btn" id="toggle">
+          <span class="circle-toggle" id="circle"></span>
+        </div>
+        <h4>
+          Yearly Billing <span class="badge" id="badge-discount">-25%</span>
+        </h4>
+      </div>
+      <div class="main-footer">
+        <ul>
+          <li>
+            <span><img src="./images/icon-check.svg" alt="" /></span>
+            Unlimited websites
+          </li>
+          <li>
+            <span><img src="./images/icon-check.svg" alt="" /></span>100% data
+            ownership
+          </li>
+          <li>
+            <span><img src="./images/icon-check.svg" alt="" /></span>Email
+            reports
+          </li>
+        </ul>
+        <button class="btn">Start my trial</button>
+      </div>
+    </section>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Godstime Agholor</a>.
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
